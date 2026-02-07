@@ -29,7 +29,7 @@ done
 '''
 
         sh "chmod +x monitor.sh"
-        sh "nohup ./monitor.sh > monitor.log 2>&1 & echo $! > monitor.pid"
+        sh 'nohup ./monitor.sh > monitor.log 2>&1 & echo $! > monitor.pid'
     }
 
     try {
