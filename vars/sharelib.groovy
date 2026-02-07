@@ -37,7 +37,7 @@ done
     }
     finally {
 
-        sh "if [ -f monitor.pid ]; then kill $(cat monitor.pid) 2>/dev/null || true; fi"
+        sh 'if [ -f monitor.pid ]; then kill $(cat monitor.pid) 2>/dev/null || true; fi'
 
         def startTime  = new Date(currentBuild.startTimeInMillis)
         long durationMs = currentBuild.duration > 0
